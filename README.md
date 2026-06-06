@@ -1,19 +1,34 @@
-# 🚀 개인 포트폴리오 웹사이트 (Personal Portfolio Website)
+# 🔋 KIST 류승호 책임연구원님 연구실 홈페이지 (Energy Materials Design Lab)
 
-깃허브 페이지(GitHub Pages)에 배포하기 최적화된 모던하고 아름다운 반응형 개인 포트폴리오 사이트입니다. HTML, CSS, JavaScript만을 활용하여 가볍고 빠르게 구동됩니다.
+구글 사이트(Google Sites)에서 이전 및 기능 고도화를 완료한 한국과학기술연구원(KIST) 에너지소재설계 연구실(Seungho Yu's Research Group)의 새로운 공식 반응형 웹사이트 패키지입니다.
+
+이 홈페이지는 **데이터 기반 아키텍처(Data-driven Architecture)**로 개발되어, 사용자가 직접 복잡한 HTML/CSS 코드를 수정할 필요 없이 **오직 단 하나의 텍스트 파일(`data.js`)만 수정하여 홈페이지 전체를 업데이트할 수 있습니다.**
 
 ---
 
-## 🎨 주요 특징 (Features)
+## ⚙️ 홈페이지 내용 업데이트 방법 (How to Update)
 
-*   **다크 & 라이트 테마 토글**: 시스템 테마 설정을 자동으로 감지하며, 유저의 수동 변경 사항을 로컬 스토리지에 유지합니다.
-*   **글래스모피즘(Glassmorphism)**: 트렌디하고 세련된 반투명 블러 스타일의 디자인 시스템이 탑재되어 있습니다.
-*   **타이핑 애니메이션**: 히어로 섹션에서 동적으로 텍스트가 타이핑되는 효과를 적용하여 동적이고 매력적인 첫인상을 제공합니다.
-*   **인터랙티브 스킬 바**: 스크롤하여 스킬셋 영역에 진입하면 게이지바가 부드럽게 채워지는 감각적인 애니메이션을 감상할 수 있습니다.
-*   **프로젝트 필터링**: 카테고리별(Web App, UI/UX Design, Clone Coding)로 프로젝트 리스트를 부드러운 전환 효과와 함께 필터링할 수 있습니다.
-*   **문의 폼 유효성 검사**: 사용자가 올바르지 않은 값이나 이메일 형식을 넣었을 시 직관적인 에러 가이드라인을 표시하며, 올바르게 입력 시 전송 성공 모달(안내 팝업)을 띄워 피드백을 제공합니다.
-*   **반응형 레이아웃**: 모바일, 태블릿, 데스크톱에 맞춰 최적화된 모바일 전용 토글 햄버거 메뉴를 구현하였습니다.
-*   **SEO & 웹 표준 최적화**: 웹 접근성을 고려한 시맨틱 HTML5 태그 구성과 메타 태그, 오픈 그래프(Open Graph) 설정을 통해 소셜 미디어 공유 및 검색 엔진 노출 확률을 높였습니다.
+홈페이지의 구성원, 연구 성과(논문), 뉴스, 홈 소개글 등을 변경하려면 아래 파일을 수정하세요.
+
+### 수정할 파일: `Homepage/data.js`
+`data.js` 파일을 텍스트 에디터(메모장, VS Code 등)로 열면 직관적인 JavaScript 객체 데이터가 나타납니다. 각 속성의 따옴표 안에 있는 텍스트만 고치고 파일을 저장하면 홈페이지에 즉각 반영됩니다.
+
+*   **홈페이지 소개글 수정**: `home` 객체 아래의 `title`, `description`, `overview` 값 수정.
+*   **연구실 멤버 추가/수정**: `members` 리스트에 새로운 연구원 정보 `{ name: "이름", role: "postdoc 또는 student", ... }`를 형식에 맞춰 복사하여 추가.
+*   **졸업생/인턴 수정**: `alumni` 및 `interns` 리스트 내의 객체들 수정 및 추가.
+*   **연구 분야 내용 수정**: `research` 리스트의 문장들 수정.
+*   **논문 실적(Publications) 추가**: `publications` 리스트의 연도(`2026` 등) 내에 새 논문 구조 `{ title: "제목", authors: "저자", journal: "저널명", isCorresponding: true/false, ... }`를 추가.
+*   **뉴스 및 행사 사진 목록 추가**: `news` 및 `photos` 리스트 수정 및 추가.
+
+---
+
+## 🎨 주요 특징 (Key Features)
+
+*   **쉬운 유지보수**: HTML 태그를 몰라도 `data.js` 텍스트 수정만으로 사이트 유지보수 완료.
+*   **로컬 CORS 에러 우려 없음**: `data.json` 파일을 비동기 fetch하는 대신 JavaScript 모듈로 로드하여, **로컬 폴더에서 `index.html`을 더블 클릭해 브라우저로 바로 실행해도 CORS 보안 에러 없이 모든 기능이 정상 작동**합니다.
+*   **다중 페이지 아키텍처 (Multi-page Architecture)**: 학술 사이트 공유에 매우 중요한 서브 링크 직접 연동을 지원하기 위해 `index.html` 외에 총 7개 핵심 메뉴 페이지를 각각의 파일로 나누어 구축하였습니다.
+*   **실시간 논문 검색 엔진**: 수십 편의 논문 데이터베이스에서 원하는 논문을 타이핑 즉시 찾아낼 수 있는 자바스크립트 검색 및 연도별 필터링 기능이 `publications.html`에 연동되어 있습니다. 저자명, 저널명, 제목의 텍스트가 실시간 인덱싱됩니다.
+*   **자동 테마 전환 및 저장**: 사용자의 기기 설정 및 수동 지정을 연동하여 다크/라이트 테마를 변경하고 로컬스토리지에 저장합니다.
 
 ---
 
@@ -21,66 +36,61 @@
 
 ```text
 Homepage/
-├── index.html   # 웹사이트 구조 및 마크업 (SEO 메타 태그 포함)
-├── style.css    # 스타일시트 (디자인 시스템 변수, 테마 토글, 레이아웃)
-├── script.js    # 인터랙션 스크립트 (애니메이션, 유효성 검사, 필터)
-└── README.md    # 프로젝트 설명서 (본 파일)
+├── data.js            # ★ 홈페이지의 모든 텍스트/논문/인원 데이터가 저장된 텍스트 파일
+├── index.html         # 메인 Welcome 홈 페이지 (구조 뼈대)
+├── people.html        # PI, 소속 포닥/대학원생 프로필 및 졸업생/인턴 이력 (구조 뼈대)
+├── research.html      # 4대 핵심 연구 분야 상세 설명 (구조 뼈대)
+├── publications.html  # 2012년 ~ 2026년 최신 연구 실적 논문 (검색/필터 구조 뼈대)
+├── news.html          # 연구실 주요 수상 및 게재 소식 목록 (구조 뼈대)
+├── photos.html        # 연구실 역대 학회 및 워크숍 행사 내역 갤러리 (구조 뼈대)
+├── opening.html       # 인원 상시 모집 요강, 협약 대학(학연/UST) 안내 및 지원 폼 (구조 뼈대)
+├── style.css          # 디자인 토큰, 레이아웃, 애니메이션 CSS
+├── script.js          # data.js 데이터를 읽어 HTML을 동적 렌더링하고 검색/테마 동작을 수행하는 JS
+└── README.md          # 본 프로젝트 가이드 및 설명서
 ```
 
 ---
 
-## 💻 로컬에서 실행하기 (How to Run Locally)
+## 💻 로컬에서 확인하기 (Local Development)
 
-본 사이트는 백엔드 서버가 필요 없는 **정적 사이트(Static Site)**입니다. 다음과 같은 방법으로 로컬에서 바로 실행해 보실 수 있습니다.
+본 웹사이트는 로컬 폴더 환경에서 바로 더블클릭하여 실행해도 온전히 작동합니다.
 
-### 방법 1: 브라우저로 직접 열기
-*   `index.html` 파일을 더블 클릭하여 기본 웹 브라우저에서 바로 실행합니다.
+### 방법 1: 파일 직접 실행
+*   `Homepage/index.html` 파일을 마우스 더블클릭하여 웹 브라우저로 열어서 확인합니다. (CORS 에러 없이 바로 전체 작동)
 
-### 방법 2: Live Server 익스텐션 이용 (추천)
-*   VS Code를 사용하고 계신다면, **Live Server** 확장 프로그램을 설치한 후 `index.html` 파일 우측 하단의 `Go Live` 버튼을 눌러 실시간 로컬 서버로 구동하면 파일 수정 시 즉각 브라우저에 반영되어 편리하게 개발할 수 있습니다.
-
-### 방법 3: Node.js 또는 Python 서버 실행
-터미널에서 프로젝트 폴더로 이동한 후 아래 명령을 통해 간이 웹 서버를 열 수 있습니다.
-*   **Node.js (npm)**: `npx http-server`
-*   **Python**: `python -m http.server 8000`
+### 방법 2: VS Code의 Live Server 사용 (권장)
+*   VS Code에서 `Homepage` 폴더를 열고 `index.html`에서 마우스 우클릭 -> `Open with Live Server`를 클릭하면 로컬 서버로 구동됩니다.
 
 ---
 
-## 🌐 깃허브 페이지에 배포하기 (Deploy to GitHub Pages)
+## 🌐 깃허브 페이지에 최종 배포하기 (Deployment)
 
-본 홈페이지는 깃허브 페이지(GitHub Pages)를 통해 무료로 손쉽게 호스팅할 수 있습니다.
+깃허브 페이지를 이용하면 무료 도메인으로 전 세계에 이 사이트를 게시할 수 있습니다.
 
-### 1단계: 깃허브 저장소 생성
-1. GitHub 로그인 후 우측 상단의 **[New]** 버튼을 클릭하여 새 저장소(Repository)를 만듭니다.
-2. 저장소 이름(Repository Name)을 입력합니다. (예: `my-portfolio` 또는 `깃허브아이디.github.io`)
-   * *참고: 저장소 이름을 `깃허브아이디.github.io`로 지으면, 서브 경로 없이 루트 도메인 주소(`https://깃허브아이디.github.io`)로 바로 연결됩니다.*
-3. **Public**으로 설정하고 저장소를 만듭니다.
+### 1단계: 깃허브 저장소(Repository) 생성
+1. GitHub 로그인 후 우측 상단 **[New]** 버튼을 통해 새 저장소를 생성합니다.
+2. 저장소 이름(Repository name)을 지정합니다. (예: `syulab.github.io` 혹은 `kist-emdl`)
+   * *참고: 저장소명을 `계정명.github.io`로 통일하면 서브 경로가 없는 깔끔한 메인 주소(`https://계정명.github.io`)가 자동 부여됩니다.*
+3. **Public** 속성으로 생성합니다.
 
-### 2단계: 코드 업로드 (Push)
-로컬 터미널에서 아래 명령어를 순서대로 실행하여 코드를 업로드합니다.
+### 2단계: 코드 업로드 (Git Push)
+작성된 코드가 위치한 터미널 경로에서 순서대로 업로드 명령어를 수행합니다:
 ```bash
-# 깃 초기화 및 파일 추가
+# 초기화 및 커밋
 git init
 git add .
+git commit -m "Deploy KIST Energy Materials Design Lab website with dynamic data architecture"
 
-# 첫 번째 커밋 생성
-git commit -m "Initialize personal portfolio site"
-
-# 기본 브랜치명을 main으로 변경
+# 기본 브랜치 지정 및 원격 연결
 git branch -M main
+git remote add origin https://github.com/본인계정/저장소이름.git
 
-# 원격 저장소 주소 연결 (본인의 GitHub 저장소 URL로 대체)
-git remote add origin https://github.com/본인아이디/저장소이름.git
-
-# 코드 업로드
+# 업로드
 git push -u origin main
 ```
-*터미널 명령어가 익숙하지 않다면, 깃허브 웹 페이지 화면에서 직접 **"uploading an existing file"** 링크를 눌러 `index.html`, `style.css`, `script.js` 파일을 마우스 드래그 앤 드롭으로 업로드해도 배포가 정상 작동합니다.*
 
 ### 3단계: Pages 설정 활성화
-1. 업로드된 GitHub 저장소의 상단 메뉴 중 **[Settings]** (설정) 탭으로 이동합니다.
-2. 왼쪽 사이드바에서 **[Pages]** 탭을 클릭합니다.
-3. **Build and deployment** 섹션 하위의 **Branch** 설정을 `None`에서 `main` 브랜치로 변경하고 오른쪽의 `/ (root)` 폴더 경로를 유지한 상태로 **[Save]** 버튼을 클릭합니다.
-4. 잠시 후 상단에 배포 완료 안내 메시지와 함께 사이트 주소(예: `https://본인아이디.github.io/저장소이름/`)가 나타납니다. 약 1~3분 뒤 해당 링크로 접속하시면 사이트가 온라인에 정상 게시됩니다!
-
--
+1. 업로드된 깃허브 저장소 상단의 **[Settings]** 탭으로 이동합니다.
+2. 왼쪽 메뉴에서 **[Pages]** 메뉴를 선택합니다.
+3. Build and deployment의 **Branch** 설정을 `None`에서 `main` 브랜치로 교체하고 저장(**[Save]**)을 클릭합니다.
+4. 약 1~2분 뒤 상단에 표시되는 무료 사이트 링크(예: `https://계정명.github.io/`)를 통해 홈페이지가 정상 구동되는 것을 보실 수 있습니다!

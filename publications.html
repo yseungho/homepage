@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Seungho Yu's Research Group (KIST)</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Database Files -->
+    <script src="data.js"></script>
+    <script src="publications_data.js"></script>
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                Seungho Yu<span>'s Group</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="people.html" class="nav-link">People</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="publications.html" class="nav-link active">Publications</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="photos.html" class="nav-link">Photos</a>
+                <a href="opening.html" class="nav-link">Opening</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: calc(var(--header-height) + 20px);">
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">RESEARCH OUTPUTS</span>
+                    <h2 class="section-title">Publications</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Search & Filters Container -->
+                <div class="search-filter-wrapper">
+                    <!-- Search Input -->
+                    <div class="search-box">
+                        <i data-lucide="search"></i>
+                        <input type="text" id="pub-search" placeholder="Search by title, author, journal, or year...">
+                    </div>
+                    
+                    <!-- Year Filter Buttons -->
+                    <div class="year-filter-buttons">
+                        <button class="year-btn active" data-year="all">All</button>
+                        <button class="year-btn" data-year="2026">2026</button>
+                        <button class="year-btn" data-year="2025">2025</button>
+                        <button class="year-btn" data-year="2024">2024</button>
+                        <button class="year-btn" data-year="2023">2023</button>
+                        <button class="year-btn" data-year="2022">2022</button>
+                        <button class="year-btn" data-year="2021">2021</button>
+                        <button class="year-btn" data-year="2020">2020</button>
+                        <button class="year-btn" data-year="2019">2019</button>
+                        <button class="year-btn" data-year="2018">2018</button>
+                        <button class="year-btn" data-year="2017">2017</button>
+                        <button class="year-btn" data-year="2014">2014</button>
+                        <button class="year-btn" data-year="2013">2013</button>
+                    </div>
+                </div>
+
+                <!-- Publications List -->
+                <div class="publications-container" id="publications-list-container">
+                    <!-- Loaded dynamically from data.js -->
+                </div>
+
+                <!-- No Results Warning -->
+                <div id="pub-no-results" class="pub-no-results hidden">
+                    <i data-lucide="info" style="width:36px; height:36px; margin: 0 auto 10px auto; color:var(--text-muted);"></i>
+                    <p>No publications found matching your search criteria.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-logo-box">
+                    <a href="index.html" class="logo">Seungho Yu<span>'s Group</span></a>
+                    <p>Energy Materials Design Lab</p>
+                    <p>Korea Institute of Science and Technology (KIST)</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="people.html">People</a>
+                    <a href="research.html">Research</a>
+                    <a href="publications.html">Publications</a>
+                    <a href="news.html">News</a>
+                    <a href="photos.html">Photos</a>
+                    <a href="opening.html">Opening</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year">2026</span> Seungho Yu. All Rights Reserved.</p>
+                <p>Designed and Built for KIST Energy Storage Research Center</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

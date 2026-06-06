@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People | Seungho Yu's Research Group (KIST)</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Database File -->
+    <script src="data.js"></script>
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                Seungho Yu<span>'s Group</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="people.html" class="nav-link active">People</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="photos.html" class="nav-link">Photos</a>
+                <a href="opening.html" class="nav-link">Opening</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Principal Investigator Section -->
+        <section class="pi-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">LAB LEADERSHIP</span>
+                    <h2 class="section-title">Principal Investigator</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="pi-grid">
+                    <!-- PI Photo and Quick Contacts -->
+                    <div class="pi-photo-card">
+                        <div class="pi-avatar" id="pi-avatar-container">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <h3 id="pi-name">Loading...</h3>
+                        <p id="pi-sub">Loading...</p>
+                        
+                        <div class="pi-social-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="pi-social-btn" id="pi-scholar-link" aria-label="Google Scholar">
+                                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px;">
+                                    <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="pi-social-btn" id="pi-orcid-link" aria-label="ORCID">
+                                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px;">
+                                    <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="pi-social-btn" id="pi-email-link" aria-label="Email"><i data-lucide="mail"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- PI Bio details -->
+                    <div class="pi-details">
+                        <h2 id="pi-bio-name">Loading...</h2>
+                        <div class="pi-title-sub" id="pi-affiliation">Loading...</div>
+                        
+                        <div class="pi-info-block">
+                            <div class="pi-info-item">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <span>Address</span>
+                                    <p id="pi-address">Loading...</p>
+                                </div>
+                            </div>
+                            <div class="pi-info-item">
+                                <i data-lucide="phone"></i>
+                                <div>
+                                    <span>Contact</span>
+                                    <p>E-mail: <span id="pi-email-text">Loading...</span><br>Tel: <span id="pi-tel">Loading...</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pi-bio-section">
+                            <h3>Education</h3>
+                            <ul class="pi-list" id="pi-education">
+                                <!-- Loaded dynamically from data.js -->
+                            </ul>
+                            
+                            <h3>Research Experiences</h3>
+                            <ul class="pi-list" id="pi-experience">
+                                <!-- Loaded dynamically from data.js -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Members Section -->
+        <section class="section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">RESEARCH TEAM</span>
+                    <h2 class="section-title">Current Members</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <!-- Postdoctoral Researchers -->
+                <h3 style="font-size: 1.35rem; margin-bottom: 20px; border-left: 4px solid var(--color-primary); padding-left: 12px;">Postdoctoral Researchers</h3>
+                <div class="members-grid" id="postdocs-list" style="margin-bottom: 50px;">
+                    <!-- Loaded dynamically from data.js -->
+                </div>
+                
+                <!-- Graduate Students -->
+                <h3 style="font-size: 1.35rem; margin-bottom: 20px; border-left: 4px solid var(--color-primary); padding-left: 12px;">Graduate Students</h3>
+                <div class="members-grid" id="students-list">
+                    <!-- Loaded dynamically from data.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Alumni Section -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">PAST MEMBERS</span>
+                    <h2 class="section-title">Alumni</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <!-- Graduate Alumni -->
+                <h3 style="font-size: 1.35rem; margin-bottom: 20px; border-left: 4px solid var(--color-primary); padding-left: 12px;">Graduate Students</h3>
+                <div class="alumni-grid" id="alumni-list">
+                    <!-- Loaded dynamically from data.js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-logo-box">
+                    <a href="index.html" class="logo">Seungho Yu<span>'s Group</span></a>
+                    <p>Energy Materials Design Lab</p>
+                    <p>Korea Institute of Science and Technology (KIST)</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="people.html">People</a>
+                    <a href="research.html">Research</a>
+                    <a href="publications.html">Publications</a>
+                    <a href="news.html">News</a>
+                    <a href="photos.html">Photos</a>
+                    <a href="opening.html">Opening</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year">2026</span> Seungho Yu. All Rights Reserved.</p>
+                <p>Designed and Built for KIST Energy Storage Research Center</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
