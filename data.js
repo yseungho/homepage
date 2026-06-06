@@ -367,23 +367,30 @@ University of Science and Technology (UST)`,
     ],
 
     // 9. LAB PHOTOS EVENTS LIST (photos.html)
-    // 각 이벤트별 photo1, photo2 속성에 행사 사진 경로를 지정할 수 있습니다. (예: photo1: "assets/images/photos/tms_2026_1.jpg")
+    // 각 이벤트별 photo 속성에 행사 사진 경로를 지정할 수 있습니다. (예: photo: "assets/images/photos/tms_2026_1.jpg")
     photos: [
-        { date: "2026.03", title: "TMS Meeting, San Diego", photo1: "assets/images/photos/tms_2026_1.jpg", photo2: "" },
-        { date: "2026.02", title: "KIST 개원기념식 수상", photo1: "", photo2: "" },
-        { date: "2025.10", title: "ECS Meeting, Chicago", photo1: "", photo2: "" },
-        { date: "2025.05", title: "KIST 체육대회", photo1: "", photo2: "" },
-        { date: "2025.05", title: "스승의 날", photo1: "", photo2: "" },
-        { date: "2025.04", title: "Arizona State University 방문", photo1: "", photo2: "" },
-        { date: "2025.02", title: "개원기념식 수상", photo1: "", photo2: "" },
-        { date: "2024.11", title: "KIST 학연 융합 컨퍼런스", photo1: "", photo2: "" },
-        { date: "2024.10", title: "대한금속·재료학회 학술대회", photo1: "", photo2: "" },
-        { date: "2024.08", title: "ACS Fall Meeting, Denver", photo1: "", photo2: "" },
-        { date: "2024.08", title: "Lawrence Livermore National Laboratory 방문", photo1: "", photo2: "" },
-        { date: "2024.04", title: "광안리 해수욕장 야외 워크숍", photo1: "", photo2: "" },
-        { date: "2023.11", title: "대한민국 과학기술대전 참가", photo1: "", photo2: "" },
-        { date: "2023.08", title: "ACS Meeting, San Francisco", photo1: "", photo2: "" },
-        { date: "2022.08", title: "Lawrence Livermore National Laboratory 방문", photo1: "", photo2: "" }
+        { date: "2026.04", title: "전기화학회 수상", photo: "assets/images/photos/2026_04-1.jpg" },
+        { date: "2026.03", title: "TMS Meeting, San Diego", photo: "assets/images/photos/2026_03-2.jpg" },
+        { date: "2026.03", title: "언론홍보 [비즈人워치]", photo: "assets/images/photos/2026_03-1.jpg" },
+        { date: "2026.02", title: "개원기념식 수상", photo: "assets/images/photos/2026_02-1.jpg" },
+        { date: "2025.10", title: "ECS Meeting, Chicago", photo: "assets/images/photos/2025_10.jpg" },
+        { date: "2025.05", title: "체육대회", photo: "assets/images/photos/2025_05-2.jpg" },
+        { date: "2025.05", title: "스승의날", photo: "assets/images/photos/2025_05-1.jpg" },
+        { date: "2025.04", title: "Arizona State University", photo: "assets/images/photos/2025_04.jpg" },
+        { date: "2025.02", title: "개원기념식 수상", photo: "assets/images/photos/2025_02.jpg" },
+        { date: "2024.11", title: "KIST 학연융합컨퍼런스", photo: "assets/images/photos/2024_11.png" },
+        { date: "2024.10", title: "UST 재학생 이야기 홍보", photo: "assets/images/photos/2024_10-2.jpg" },
+        { date: "2024.10", title: "대한금속·재료학회", photo: "assets/images/photos/2024_10-1.jpg" },
+        { date: "2024.08", title: "ACS Fall meeting, Denver", photo: "assets/images/photos/2024_8-2.jpg" },
+        { date: "2024.08", title: "Lawrence Livermore National Laboratory", photo: "assets/images/photos/2024_08-1.png" },
+        { date: "2024.05", title: "KIST 체육대회", photo: "assets/images/photos/2024_5-2.jpg" },
+        { date: "2024.05", title: "스승의 날", photo: "assets/images/photos/2024_5-1.jpg" },
+        { date: "2024.04", title: "광안리해수욕장", photo: "assets/images/photos/2024_4.jpg" },
+        { date: "2024.01", title: "신년 회식", photo: "assets/images/photos/2024_1.jpg" },
+        { date: "2023.11", title: "대한민국 과학기술대전", photo: "assets/images/photos/2023_11.jpg" },
+        { date: "2023.10", title: "그룹 저녁 식사", photo: "assets/images/photos/2023_10.jpg" },
+        { date: "2023.08", title: "ACS 2023 Meeting, San Francisco", photo: "assets/images/photos/2023_08.jpg" },
+        { date: "2022.08", title: "Lawrence Livermore National Laboratory", photo: "assets/images/photos/2022_08.jpg" }
     ],
 
     // 10. RECRUITMENT OPENING INFO (opening.html)
@@ -395,13 +402,13 @@ University of Science and Technology (UST)`,
             { label: "2. 근무지", value: "한국과학기술연구원 에너지저장연구센터 (서울시 성북구 위치)" },
             { label: "3. 지원 자격 및 분야", value: "재료, 화공, 기계, 화학, 물리 등 관련 학과, 차세대 이차전지 소재 관련 연구" }
         ],
-        researchTitle: "5. 주요 연구 분야",
+        researchTitle: "주요 연구 분야",
         researchSubtitle: "차세대 이차전지용 소재 설계 및 개발 / 인공지능 기반 이차전지용 소재 설계",
         researchItems: [
             "제일원리 계산 및 머신러닝 기반 차세대 이차전지용 소재 설계",
             "차세대 이차전지 소재 합성 및 분석, 전기화학 성능 평가, 전지 제조 및 성능 평가"
         ],
-        admissionTitle: "4. 지원 형태",
+        admissionTitle: "지원 형태",
         admissions: [
             {
                 num: "1",
@@ -419,7 +426,7 @@ University of Science and Technology (UST)`,
                 desc: "대학교 입학 후 위탁 파견 연수생 및 박사후연구원(Postdoc) 직위는 상시 열려 있습니다."
             }
         ],
-        contactTitle: "6. 지도박사 (Contact)",
+        contactTitle: "지도박사 (Contact)",
         contactName: "류승호 (Seungho Yu)",
         contactRole: "KIST 에너지저장연구센터 책임연구원",
         contactEmail: "shyu@kist.re.kr",

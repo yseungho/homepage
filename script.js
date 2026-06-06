@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="research-info">
                         <h3>${area.title}</h3>
                         <p>${area.p1}</p>
-                        <p style="margin-top: 12px;">${area.p2}</p>
+                        <p style="margin-top: 6px;">${area.p2}</p>
                     </div>
                 </div>
             `;
@@ -245,26 +245,12 @@ document.addEventListener('DOMContentLoaded', () => {
             
             let listMarkup = '';
             group.papers.forEach(paper => {
-                const imgMarkup = paper.image
-                    ? `<img src="${paper.image}" alt="TOC Graphic" class="pub-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" style="width:100%; height:100%; object-fit:cover;">
-                       <div class="pub-img-placeholder" style="display:none;">
-                           <i data-lucide="image"></i>
-                           <span>TOC Graphic</span>
-                       </div>`
-                    : `<div class="pub-img-placeholder" style="display:flex;">
-                           <i data-lucide="image"></i>
-                           <span>TOC Graphic</span>
-                       </div>`;
-
                 listMarkup += `
                     <div class="pub-item">
                         <div class="pub-info">
                             <h4 class="pub-title">${paper.title}</h4>
                             <p class="pub-authors">${paper.authors}</p>
                             <p class="pub-journal">${paper.journal}</p>
-                        </div>
-                        <div class="pub-image-wrapper">
-                            ${imgMarkup}
                         </div>
                     </div>
                 `;
@@ -390,23 +376,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = 'project-card';
             
-            const photo1Markup = event.photo1
-                ? `<img src="${event.photo1}" alt="Photo 1" class="event-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" style="width:100%; height:100%; object-fit:cover;">
-                   <i data-lucide="camera" style="display:none; width:20px; height:20px; color:var(--text-muted);"></i>`
-                : `<i data-lucide="camera" style="width:20px; height:20px; color:var(--text-muted);"></i>`;
-
-            const photo2Markup = event.photo2
-                ? `<img src="${event.photo2}" alt="Photo 2" class="event-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" style="width:100%; height:100%; object-fit:cover;">
-                   <i data-lucide="camera" style="display:none; width:20px; height:20px; color:var(--text-muted);"></i>`
-                : `<i data-lucide="camera" style="width:20px; height:20px; color:var(--text-muted);"></i>`;
+            const photoMarkup = event.photo
+                ? `<img src="${event.photo}" alt="${event.title}" class="event-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+                   <i data-lucide="camera" style="display:none; width:36px; height:36px; color:var(--text-muted);"></i>`
+                : `<i data-lucide="camera" style="width:36px; height:36px; color:var(--text-muted);"></i>`;
 
             card.innerHTML = `
-                <div class="project-images-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; height: 180px; padding: 8px 8px 0 8px;">
-                    <div class="project-image-box" style="background-color: var(--bg-tertiary); display:flex; align-items:center; justify-content:center; overflow:hidden; border-radius: var(--border-radius-sm); border: 1px dashed var(--border-color);">
-                        ${photo1Markup}
-                    </div>
-                    <div class="project-image-box" style="background-color: var(--bg-tertiary); display:flex; align-items:center; justify-content:center; overflow:hidden; border-radius: var(--border-radius-sm); border: 1px dashed var(--border-color);">
-                        ${photo2Markup}
+                <div class="project-images-grid" style="display: flex; height: 360px; padding: 8px 8px 0 8px;">
+                    <div class="project-image-box" style="background-color: var(--bg-tertiary); width: 100%; height: 100%; display:flex; align-items:center; justify-content:center; overflow:hidden; border-radius: var(--border-radius-sm); border: 1px dashed var(--border-color);">
+                        ${photoMarkup}
                     </div>
                 </div>
                 <div class="project-info">
