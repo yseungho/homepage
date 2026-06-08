@@ -90,7 +90,7 @@ University of Science and Technology (UST)`,
             photo: "assets/images/members/Eunji Kwon.png",
             program: "Ph.D. course<br>Korea University - KIST joint program",
             interest: "First-principles calculations, Solid electrolytes, Cathode materials",
-            email: "093196@kist.re.kr"
+            email: "eunjikwon@kist.re.kr"
         },
         {
             name: "Susie Lee",
@@ -98,7 +98,7 @@ University of Science and Technology (UST)`,
             photo: "assets/images/members/Susie Lee.png",
             program: "M.S. course",
             interest: "All-solid-state batteries, Solid electrolytes",
-            email: "Grad Student"
+            email: "susielee@kist.re.kr"
         }
     ],
 
