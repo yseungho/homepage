@@ -96,7 +96,7 @@ University of Science and Technology (UST)`,
             name: "Susie Lee",
             role: "student",
             photo: "assets/images/members/Susie Lee.png",
-            program: "M.S. course",
+            program: "M.S. course<br>Yonsei University - KIST joint program",
             interest: "All-solid-state batteries, Solid electrolytes",
             email: "susielee@kist.re.kr"
         }
