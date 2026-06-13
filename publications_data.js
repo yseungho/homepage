@@ -16,7 +16,7 @@ const PUBLICATIONS_DATA = [
         papers: [
             {
                 title: "Machine-Learning Framework for Designing Stable Interfaces in All-Solid-State Lithium-Ion Batteries",
-                authors: "Sehyeok Park,† Myeongcho Jang,† Hun-Gi Jung, Kyung Yoon Chung, Seungho Yu*",
+                authors: "Sehyeok Park,† Myeongcho Jang,† Hun-Gi Jung, Kyung Yoon Chung, <strong>Seungho Yu*</strong>",
                 journal: "Advanced Science, 2026, accepted",
                 isCorresponding: true,
                 isCoFirst: true,
