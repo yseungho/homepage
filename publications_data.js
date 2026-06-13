@@ -15,6 +15,15 @@ const PUBLICATIONS_DATA = [
         year: "2026",
         papers: [
             {
+                title: "Machine-Learning Framework for Designing Stable Interfaces in All-Solid-State Lithium-Ion Batteries",
+                authors: "Sehyeok Park,† Myeongcho Jang,† Hun-Gi Jung, Kyung Yoon Chung, Seungho Yu*",
+                journal: "Advanced Science, 2026, accepted",
+                isCorresponding: true,
+                isCoFirst: true,
+                isOpenAccess: true,
+                image: ""
+            },
+            {
                 title: "Synergistically Accelerating Zn2+ Transport and Desolvation through Cation-Deficient Ion Channels in High-Performance Zn Metal Batteries",
                 authors: "Hyeongbeom Kang,† Jung Been Park,† Myeongcho Jang,† Min Sang Kim, <strong>Seungho Yu*</strong> and Dong-Wan Kim*",
                 journal: "Carbon Energy, 2026, accepted",
