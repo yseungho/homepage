@@ -376,8 +376,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = 'project-card';
             
+            const cleanAltText = event.title.replace(/<[^>]*>/g, '').replace(/"/g, '&quot;');
             const photoMarkup = event.photo
-                ? `<img src="${event.photo}" alt="${event.title}" class="event-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+                ? `<img src="${event.photo}" alt="${cleanAltText}" class="event-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" style="width:100%; height:100%; object-fit:cover; object-position:center;">
                    <i data-lucide="camera" style="display:none; width:36px; height:36px; color:var(--text-muted);"></i>`
                 : `<i data-lucide="camera" style="width:36px; height:36px; color:var(--text-muted);"></i>`;
 

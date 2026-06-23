@@ -400,9 +400,9 @@ section {
 
 .hero-container {
     display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
-    gap: 40px;
-    align-items: center;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero-content {
@@ -428,7 +428,7 @@ section {
 }
 
 .hero-description {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
     margin-bottom: 30px;
     line-height: 1.65;
