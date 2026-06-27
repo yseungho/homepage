@@ -17,7 +17,7 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Machine-Learning Framework for Designing Stable Interfaces in All-Solid-State Lithium-Ion Batteries",
                 authors: "Sehyeok Park,† Myeongcho Jang,† Hun-Gi Jung, Kyung Yoon Chung, <strong>Seungho Yu*</strong>",
-                journal: "Advanced Science, 2026, accepted",
+                journal:  "<a href=\"https://doi.org/10.1002/advs.76305" target=\"_blank\" rel=\"noopener noreferrer\">Advanced Science, 2026, e76305 </a>",
                 isCorresponding: true,
                 isCoFirst: true,
                 isOpenAccess: true,
@@ -26,9 +26,10 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Synergistically Accelerating Zn2+ Transport and Desolvation through Cation-Deficient Ion Channels in High-Performance Zn Metal Batteries",
                 authors: "Hyeongbeom Kang,† Jung Been Park,† Myeongcho Jang,† Min Sang Kim, <strong>Seungho Yu*</strong> and Dong-Wan Kim*",
-                journal: "Carbon Energy, 2026, accepted",
+                journal: "<a href=\"https://doi.org/10.1002/cey2.70303" target=\"_blank\" rel=\"noopener noreferrer\">Carbon Energy, 2026, e70303</a>", 
                 isCorresponding: true,
                 isCoFirst: true,
+                isOpenAccess: true,
                 image: "assets/images/papers/2026_zinc_transport.jpg"
             },
             {
