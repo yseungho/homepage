@@ -433,7 +433,7 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Materials design of sodium chloride solid electrolytes Na3MCl6 for all-solid-state sodium-ion batteries",
                 authors: "Dongsu Park, Kwangnam Kim, Gin Hyung Chun, Brandon C Wood, Joon Hyung Shim*, and <strong>Seungho Yu*</strong>",
-                journal: "<a href=\"https://doi.org/10.1039/D1TA06842C\" target=\"_blank\" rel=\"noopener noreferrer\">Journal of Materials Chemistry A, 2021, 9, 23037-23045.</a>",
+                journal: "<a href=\"https://doi.org/10.1039/D1TA07050A\" target=\"_blank\" rel=\"noopener noreferrer\">Journal of Materials Chemistry A, 2021, 9, 23037-23045.</a>",
                 isCorresponding: true,
                 image: ""
             },
@@ -454,7 +454,7 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Material Design Strategy for Halide Solid Electrolytes Li3MX6 (X = Cl, Br, and I) for All-Solid-State High-Voltage Li-Ion Batteries",
                 authors: "Kwangnam Kim†, Dongsu Park†, Hun-Gi Jung, Kyung Yoon Chung, Joon Hyung Shim, Brandon C. Wood, and <strong>Seungho Yu*</strong>",
-                journal: "<a href=\"https://doi.org/10.1021/acs.chemmater.1c00201\" target=\"_blank\" rel=\"noopener noreferrer\">Chemistry of Materials, 2021, 33 (10), 3669-3677.</a>",
+                journal: "<a href=\"https://doi.org/10.1021/acs.chemmater.1c00555\" target=\"_blank\" rel=\"noopener noreferrer\">Chemistry of Materials, 2021, 33 (10), 3669-3677.</a>",
                 isCorresponding: true,
                 isCoFirst: true,
                 image: ""
