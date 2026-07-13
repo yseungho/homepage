@@ -106,14 +106,14 @@ University of Science and Technology (UST)`,
     alumni: [
         {
             name: "Kanguk Park",
-            degree: "M.S. Korea University - KIST joint program (2020.03 - 2022.12)",
+            degree: "M.S. Korea University - KIST joint program (2024.03 - 2025.12)",
             interest: "First-principles calculations, Machine learning, Solid electrolytes",
             current: "POSCO IH",
             photo: "assets/images/members/Kanguk Park.png"
         },
         {
             name: "Gin Hyung Chun",
-            degree: "M.S. Korea University - KIST joint program (2020.01 - 2021.12)",
+            degree: "M.S. Korea University - KIST joint program (2021.03 - 2022.12)",
             interest: "Materials design, First-principles calculations, Machine learning",
             current: "Samsung Electronics",
             photo: "assets/images/members/Gin Hyung Chun.jpg"
