@@ -15,6 +15,24 @@ const PUBLICATIONS_DATA = [
         year: "2026",
         papers: [
             {
+                title: "Phase-Changeable Ion-Conducting Fillers for Sintering-Free Continuous Li+ Conduction Networks toward Oxide-Based All-Solid-State Batteries",
+                authors: "Yiseul Yoo, Mingony Kim, Yongheum Lee, Hyori Na, <strong>Seungho Yu</strong>, Dongjin Byun, Kyung Yoon Chung*, Hee-Dae Lim*",
+                journal:  "Journal of Energy Chemistry, 2026, accepted",
+                isCorresponding: false,
+                isCoFirst:false,
+                isOpenAccess: false,
+                image: ""
+            },
+            {
+                title: "Morphology diversified Sn growth for aqueous acidic batteries",
+                authors: "Young-Hoon Lee, Geumbi Na, Eunji Kwon, Young Yong Kim, Dasol Yoon, Eunbin Park, Hosung Choi, David A. Muller, <strong>Seungho Yu</strong>, Yung-Eun Sung* and Seung-Ho Yu*",
+                journal:  "Journal of the American Chemical Society, 2026, accepted",
+                isCorresponding: false,
+                isCoFirst:false,
+                isOpenAccess: false,
+                image: ""
+            },
+            {
                 title: "Machine-Learning Framework for Designing Stable Interfaces in All-Solid-State Lithium-Ion Batteries",
                 authors: "Sehyeok Park,† Myeongcho Jang,† Hun-Gi Jung, Kyung Yoon Chung, <strong>Seungho Yu*</strong>",
                 journal:  "<a href=\"https://doi.org/10.1002/advs.76305\" target=\"_blank\" rel=\"noopener noreferrer\">Advanced Science, 2026, e76305</a>",
