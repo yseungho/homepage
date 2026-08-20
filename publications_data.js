@@ -16,7 +16,7 @@ const PUBLICATIONS_DATA = [
         papers: [
             {
                 title: "Unveiling Interfacial Charge Transfer-Mediated Hydrogen Spillover of Ultra-Low-Loaded Ruthenium Catalysts on Hydrogen Tungsten Bronze Nanofibers",
-                authors: "Kyounghoon Jung, Hee Jo Song, Hyunseok Yoon, Myeongcho Jang, Yumin Park, Kyunggyu Kim, Andi Haryanto, Woong-Ju Kim, Chan Woo Lee, <strong>Seungho Yu*</strong>, and Dong-Wan Kim*",
+                authors: "Kyounghoon Jung, Hee Jo Song, Hyunseok Yoon, Myeongcho Jang, Yumin Park, Kyunggyu Kim, Andi Haryanto, Woong-Ju Kim, Chan Woo Lee, <strong>Seungho Yu*</strong>, Dong-Wan Kim*",
                 journal:  "Chinese Journal of Catalysis, 2026, accepted",
                 isCorresponding: true,
                 isCoFirst: true,
@@ -34,7 +34,7 @@ const PUBLICATIONS_DATA = [
             },
             {
                 title: "Morphology diversified Sn growth for aqueous acidic batteries",
-                authors: "Young-Hoon Lee, Geumbi Na, Eunji Kwon, Young Yong Kim, Dasol Yoon, Eunbin Park, Hosung Choi, David A. Muller, <strong>Seungho Yu</strong>, Yung-Eun Sung* and Seung-Ho Yu*",
+                authors: "Young-Hoon Lee, Geumbi Na, Eunji Kwon, Young Yong Kim, Dasol Yoon, Eunbin Park, Hosung Choi, David A. Muller, <strong>Seungho Yu</strong>, Yung-Eun Sung* Seung-Ho Yu*",
                 journal:  "Journal of the American Chemical Society, 2026, accepted",
                 isCorresponding: false,
                 isCoFirst:false,
@@ -91,7 +91,7 @@ const PUBLICATIONS_DATA = [
             },
             {
                 title: "Interfacial Stability and Design Strategies for Halide Solid Electrolytes in High-Voltage All-Solid-State Sodium-Ion Batteries",
-                authors: "Myeongcho Jang, Eunji Kwon, Chelin Jeon, Sooyeon Kim,* and <strong>Seungho Yu*</strong>",
+                authors: "Myeongcho Jang, Eunji Kwon, Chelin Jeon, Sooyeon Kim,* <strong>Seungho Yu*</strong>",
                 journal: "<a href=\"https://doi.org/10.1002/smtd.202502179\" target=\"_blank\" rel=\"noopener noreferrer\">Small Methods, 2026, 10, e02179</a>",
                 isCorresponding: true,
                 isOpenAccess: true,
@@ -163,14 +163,14 @@ const PUBLICATIONS_DATA = [
             },
             {
                 title: "Cu2O/Cu Chiral Catalysts for Highly Selective Solar-Assisted CO2-to-CO Electroreduction",
-                authors: "Hyungsoo Lee, Young Sun Park, Eunji Kwon, Chang-Seop Jeong, Juwon Yun, Subin Moon, Soobin Lee, Jun Hwan Kim, Donghyun Kim, Wooyong Jeong, Jaehyun Son, <strong>Seungho Yu</strong>, and Jooho Moon*",
+                authors: "Hyungsoo Lee, Young Sun Park, Eunji Kwon, Chang-Seop Jeong, Juwon Yun, Subin Moon, Soobin Lee, Jun Hwan Kim, Donghyun Kim, Wooyong Jeong, Jaehyun Son, <strong>Seungho Yu</strong>, Jooho Moon*",
                 journal: "<a href=\"https://doi.org/10.1002/adfm.202508577\" target=\"_blank\" rel=\"noopener noreferrer\">Advanced Functional Materials, 2025, 35, 50, e08577</a>",
                 isCorresponding: false,
                 image: ""
             },
             {
                 title: "Designing Metal Phosphide Solid-Electrolyte Interphase for Stable Lithium Metal Batteries through Electrified Interface Optimization and Synergistic Conversion",
-                authors: "Jung Been Park, Changhoon Choi, Min Sang Kim, Hyeongbeom Kang, Eunji Kwon, <strong>Seungho Yu</strong>, and Dong-Wan Kim*",
+                authors: "Jung Been Park, Changhoon Choi, Min Sang Kim, Hyeongbeom Kang, Eunji Kwon, <strong>Seungho Yu</strong>, Dong-Wan Kim*",
                 journal: "<a href=\"https://doi.org/10.1007/s40820-025-01813-1\" target=\"_blank\" rel=\"noopener noreferrer\">Nano-Micro Letters, 2025, 17, 315</a>",
                 isCorresponding: false,
                 image: ""
@@ -261,7 +261,7 @@ const PUBLICATIONS_DATA = [
             },
             {
                 title: "Interfacial stabilization strategy via In-doped Ag metal coating enables a high cycle life of anode-free solid-state Li batteries",
-                authors: "Ji Hyun Lee, Sang-Hwan Oh, Haena Yim, Hong-Ju Lee, Eunji Kwon, <strong>Seungho Yu</strong>, Jun Sub Kim, Juhyun Song, Jehyoung Koo, Jiung Cho, So Hee Kim, Ahrom Ryu, Seung Ho Choi, Yunsung Kim, Gahyeon Im, Ji-Won Choi* and Seung-Ho Yu*",
+                authors: "Ji Hyun Lee, Sang-Hwan Oh, Haena Yim, Hong-Ju Lee, Eunji Kwon, <strong>Seungho Yu</strong>, Jun Sub Kim, Juhyun Song, Jehyoung Koo, Jiung Cho, So Hee Kim, Ahrom Ryu, Seung Ho Choi, Yunsung Kim, Gahyeon Im, Ji-Won Choi* Seung-Ho Yu*",
                 journal: "<a href=\"https://doi.org/10.1016/j.ensm.2024.103398\" target=\"_blank\" rel=\"noopener noreferrer\">Energy Storage Materials, 2024, 69, 103398</a>",
                 isCorresponding: false,
                 image: ""
@@ -275,14 +275,14 @@ const PUBLICATIONS_DATA = [
             },
             {
                 title: "Te hexagonal nanotubes with fast 1-dimensional Zn ion diffusion for high-performance zinc-ion battery cathodes",
-                authors: "Mihyun Kim, Hyosik Kim, Si-Hwan Lee, <strong>Seungho Yu</strong>, Won Kim, Jong-Seong Bae, Chi-Yeong Ahn, Hyungwon Shim, Ji Eun Lee* and Seung-Ho Yu*",
+                authors: "Mihyun Kim, Hyosik Kim, Si-Hwan Lee, <strong>Seungho Yu</strong>, Won Kim, Jong-Seong Bae, Chi-Yeong Ahn, Hyungwon Shim, Ji Eun Lee* Seung-Ho Yu*",
                 journal: "<a href=\"https://doi.org/10.1016/j.cej.2023.148256\" target=\"_blank\" rel=\"noopener noreferrer\">Chemical Engineering Journal, 2024, 481, 148256</a>",
                 isCorresponding: false,
                 image: ""
             },
             {
                 title: "Fluorine-Substituted Lithium Chloride Solid Electrolytes for High-Voltage All-Solid-State Lithium-Ion Batteries",
-                authors: "Sooyeon Kim†, Yongheum Lee†, Kwangnam Kim, Brandon C. Wood*, Sang Soo Han*, and <strong>Seungho Yu*</strong>",
+                authors: "Sooyeon Kim†, Yongheum Lee†, Kwangnam Kim, Brandon C. Wood*, Sang Soo Han*, <strong>Seungho Yu*</strong>",
                 journal: "<a href=\"https://doi.org/10.1021/acsenergylett.3c02307\" target=\"_blank\" rel=\"noopener noreferrer\">ACS Energy Letters, 2024, 9, 1, 38-47.</a>",
                 isCorresponding: true,
                 isCoFirst: true,
@@ -308,7 +308,7 @@ const PUBLICATIONS_DATA = [
             },
             {
                 title: "Fortifying Zinc Metal Anodes against Uncontrollable Side-Reactions and Dendrite Growth for Practical Aqueous Zinc Ion Batteries: A Novel Composition of Anti-corrosive and Zn2+ Regulating Artificial Protective Layer",
-                authors: "Jong Hyun Park, Changhoon Choi, Jung Been Park, <strong>Seungho Yu*</strong>, and Dong-Wan Kim*",
+                authors: "Jong Hyun Park, Changhoon Choi, Jung Been Park, <strong>Seungho Yu*</strong>, Dong-Wan Kim*",
                 journal: "<a href=\"https://doi.org/10.1002/aenm.202302493\" target=\"_blank\" rel=\"noopener noreferrer\">Advanced Energy Materials, 2024, 14, 2302493.</a>",
                 isCorresponding: true,
                 isCoverPicture: true,
@@ -316,7 +316,7 @@ const PUBLICATIONS_DATA = [
             },
             {
                 title: "Long cycle-life aqueous Zn battery enabled by facile carbon nanotube coating on Cu current collector",
-                authors: "Beom-Keun Cho, Sung-Ho Huh, So Hee Kim, <strong>Seungho Yu</strong>, Jong-Seong Bae, Jung-Keun Yoo, and Seung-Ho Yu*",
+                authors: "Beom-Keun Cho, Sung-Ho Huh, So Hee Kim, <strong>Seungho Yu</strong>, Jong-Seong Bae, Jung-Keun Yoo, Seung-Ho Yu*",
                 journal: "<a href=\"https://doi.org/10.1002/cey2.441\" target=\"_blank\" rel=\"noopener noreferrer\">Carbon Energy, 2024, 6, 6, e441</a>",
                 isCorresponding: false,
                 image: ""
