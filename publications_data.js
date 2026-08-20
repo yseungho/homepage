@@ -15,6 +15,15 @@ const PUBLICATIONS_DATA = [
         year: "2026",
         papers: [
             {
+                title: "Unveiling Interfacial Charge Transfer-Mediated Hydrogen Spillover of Ultra-Low-Loaded Ruthenium Catalysts on Hydrogen Tungsten Bronze Nanofibers",
+                authors: "Kyounghoon Jung, Hee Jo Song, Hyunseok Yoon, Myeongcho Jang, Yumin Park, Kyunggyu Kim, Andi Haryanto, Woong-Ju Kim, Chan Woo Lee, <strong>Seungho Yu*</strong>, and Dong-Wan Kim*",
+                journal:  "Chinese Journal of Catalysis, 2026, accepted",
+                isCorresponding: true,
+                isCoFirst: true,
+                isOpenAccess: false,
+                image: ""
+            },
+            {
                 title: "Phase-Changeable Ion-Conducting Fillers for Sintering-Free Continuous Li+ Conduction Networks toward Oxide-Based All-Solid-State Batteries",
                 authors: "Yiseul Yoo, Mingony Kim, Yongheum Lee, Hyori Na, <strong>Seungho Yu</strong>, Dongjin Byun, Kyung Yoon Chung*, Hee-Dae Lim*",
                 journal:  "Journal of Energy Chemistry, 2026, accepted",
