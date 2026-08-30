@@ -26,7 +26,7 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Phase-Changeable Ion-Conducting Fillers for Sintering-Free Continuous Li+ Conduction Networks toward Oxide-Based All-Solid-State Batteries",
                 authors: "Yiseul Yoo, Mingony Kim, Yongheum Lee, Hyori Na, <strong>Seungho Yu</strong>, Dongjin Byun, Kyung Yoon Chung*, Hee-Dae Lim*",
-                journal:  "Journal of Energy Chemistry, 2026, accepted",
+                journal: "<a href=\"https://doi.org/10.1016/j.jechem.2026.08.026\" target=\"_blank\" rel=\"noopener noreferrer\">Journal of Energy Chemistry, 2026, accepted</a>", 
                 isCorresponding: false,
                 isCoFirst:false,
                 isOpenAccess: false,
@@ -35,7 +35,7 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Morphology diversified Sn growth for aqueous acidic batteries",
                 authors: "Young-Hoon Lee, Geumbi Na, Eunji Kwon, Young Yong Kim, Dasol Yoon, Eunbin Park, Hosung Choi, David A. Muller, <strong>Seungho Yu</strong>, Yung-Eun Sung* Seung-Ho Yu*",
-                journal:  "Journal of the American Chemical Society, 2026, accepted",
+                journal: "<a href=\"https://doi.org/10.1021/jacs.6c08047\" target=\"_blank\" rel=\"noopener noreferrer\">Journal of the American Chemical Society, 2026, accepted</a>", 
                 isCorresponding: false,
                 isCoFirst:false,
                 isOpenAccess: false,
