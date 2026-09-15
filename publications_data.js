@@ -15,6 +15,15 @@ const PUBLICATIONS_DATA = [
         year: "2026",
         papers: [
             {
+                title: "Regulating Oxygen-Mediated Reconstruction During Cooling: A New Design Principle for High-Capacity Sodium Manganese Oxide Cathodes",
+                authors: "Seungmin Lee, Daseul Han, Jae-Ho Park, Eunji Kwon, Elang Barruna, Sang Hyuk Gong, Mingony Kim, Yiseul Yoo, <strong>Seungho Yu</strong>, Kyung Yoon Chung, Kyung-Wan Nam, Se Young Kim*, and Hyung-Seok Kim*",
+                journal: "Advanced Science, 2026, accepted",
+                isCorresponding: false,
+                isCoFirst: false, 
+                isOpenAccess: true,
+                image: ""
+            },   
+            {
                 title: "Unveiling Interfacial Charge Transfer-Mediated Hydrogen Spillover of Ultra-Low-Loaded Ruthenium Catalysts on Hydrogen Tungsten Bronze Nanofibers",
                 authors: "Kyounghoon Jung, Hee Jo Song, Hyunseok Yoon, Myeongcho Jang, Yumin Park, Kyunggyu Kim, Andi Haryanto, Woong-Ju Kim, Chan Woo Lee, <strong>Seungho Yu*</strong>, Dong-Wan Kim*",
                 journal:  "Chinese Journal of Catalysis, 2026, accepted",
@@ -26,7 +35,7 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Phase-Changeable Ion-Conducting Fillers for Sintering-Free Continuous Li+ Conduction Networks toward Oxide-Based All-Solid-State Batteries",
                 authors: "Yiseul Yoo, Mingony Kim, Yongheum Lee, Hyori Na, <strong>Seungho Yu</strong>, Dongjin Byun, Kyung Yoon Chung*, Hee-Dae Lim*",
-                journal: "<a href=\"https://doi.org/10.1016/j.jechem.2026.08.026\" target=\"_blank\" rel=\"noopener noreferrer\">Journal of Energy Chemistry, 2026, accepted</a>", 
+                journal: "<a href=\"https://doi.org/10.1016/j.jechem.2026.08.026\" target=\"_blank\" rel=\"noopener noreferrer\">Journal of Energy Chemistry, 2026, 123, 460-469</a>", 
                 isCorresponding: false,
                 isCoFirst:false,
                 isOpenAccess: false,
