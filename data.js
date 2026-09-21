@@ -184,6 +184,11 @@ University of Science and Technology (UST)`,
     // 8. LAB NEWS TIMELINE (news.html)
     news: [
         {
+            date: "2026. 06",
+            title: "New Study Published in Advanced Science",
+            desc: "Our study about machine-learning framework for designing stable interfaces in all-solid-state lithium-ion batteries has been published in Advanced Science. (Sehyeok Park,† Myeongcho Jang,† Hun-Gi Jung, Kyung Yoon Chung, Seungho Yu*, Advanced Science, 2026, e76305) <a href=\"https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/advs.76305\" target=\"_blank\" rel=\"noopener noreferrer\">[Open Access]</a>"
+        },
+        {
             date: "2026. 05",
             title: "전채린 박사과정생 KIST 학연 융합 컨퍼런스 구두발표 우수상 수상",
             desc: "전채린 박사과정생이 2026년 KIST 학연 융합 컨퍼런스에서 구두발표 우수상을 수상하였습니다."
@@ -217,7 +222,7 @@ University of Science and Technology (UST)`,
         {
             date: "2026. 01",
             title: "New Study Published in ACS Energy Letters (I.F. = 18.9)",
-            desc: "Our study about high-voltage all-solid-state sodium-ion batteries has been published in ACS Energy Letters. (Chelin Jeon,† Yiseul Yoo,† Eunji Kwon,† Sang Hyuk Gong, Mingony Kim, Sang-Ok Kim, Hyung-Seok Kim, Hun-Gi Jung, Kyung Yoon Chung, Yoon Seok Jung*, Seungho Yu*, 2026, 11, 616-624) <a href=\"https://doi.org/10.1021/acsenergylett.5c03248\" target=\"_blank\" rel=\"noopener noreferrer\">[Link]</a> It has also been featured as a Supplementary Cover. <a href=\"https://pubs.acs.org/cms/10.1021/aelccp.2026.11.issue-1/asset/aelccp.2026.11.issue-1.xlargecover-5.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">[Link]</a><br>언론 보도: <a href=\"https://www.yna.co.kr/view/AKR20260211167700017?input=1195m\" target=\"_blank\" rel=\"noopener noreferrer\">[연합뉴스]</a>  <a href=\"https://search.naver.com/search.naver?de=&docid=0010015902892&ds=&field=0&mynews=0&news_office_checked=&nso=so%3Ar%2Cp%3Aall%2Ca%3Aall&office_section_code=0&office_type=0&pd=0&photo=0&query=kist+%EB%82%98%ED%8A%B8%EB%A5%A8+%EC%A0%84%EA%B3%A0%EC%B2%B4%EC%A0%84%EC%A7%80&related=1&sm=tab_tnw&sort=0&ssc=tab.news.all\" target=\"_blank\" rel=\"noopener noreferrer\">[News list]</a>"
+            desc: "Our study about high-voltage all-solid-state sodium-ion batteries has been published in ACS Energy Letters. (Chelin Jeon,† Yiseul Yoo,† Eunji Kwon,† Sang Hyuk Gong, Mingony Kim, Sang-Ok Kim, Hyung-Seok Kim, Hun-Gi Jung, Kyung Yoon Chung, Yoon Seok Jung*, Seungho Yu*, 2026, 11, 616-624) <a href=\"https://doi.org/10.1021/acsenergylett.5c03248\" target=\"_blank\" rel=\"noopener noreferrer\">[Link]</a> It has also been featured as a Supplementary Cover. <br>언론 보도: <a href=\"https://www.yna.co.kr/view/AKR20260211167700017?input=1195m\" target=\"_blank\" rel=\"noopener noreferrer\">[연합뉴스]</a>  <a href=\"https://search.naver.com/search.naver?de=&docid=0010015902892&ds=&field=0&mynews=0&news_office_checked=&nso=so%3Ar%2Cp%3Aall%2Ca%3Aall&office_section_code=0&office_type=0&pd=0&photo=0&query=kist+%EB%82%98%ED%8A%B8%EB%A5%A8+%EC%A0%84%EA%B3%A0%EC%B2%B4%EC%A0%84%EC%A7%80&related=1&sm=tab_tnw&sort=0&ssc=tab.news.all\" target=\"_blank\" rel=\"noopener noreferrer\">[News list]</a>"
         },
         {
             date: "2025. 12",
