@@ -374,6 +374,10 @@ University of Science and Technology (UST)`,
     // 9. LAB PHOTOS EVENTS LIST (photos.html)
     // 각 이벤트별 photo 속성에 행사 사진 경로를 지정할 수 있습니다. (예: photo: "assets/images/photos/tms_2026_1.jpg")
     photos: [
+        { date: "2026.08", title: "Lawrence Livermore National Laboratory", photo: "assets/images/photos/2026-08-llnl.jpg" },
+        { date: "2026.08", title: "과제 킥오프 미", photo: "assets/images/photos/2026-08-1.jpg" },
+        { date: "2026.06", title: "IMLB 2026, Montreal", photo: "assets/images/photos/2026_06-imlb.jpg" },
+        { date: "2026.06", title: "GCIM 2026, Jeju", photo: "assets/images/photos/2026_06-gcim.jpg" },
         { date: "2026.04", title: "전기화학회 수상", photo: "assets/images/photos/2026_04-1.jpg" },
         { date: "2026.03", title: "TMS Meeting, San Diego", photo: "assets/images/photos/2026_03-2.jpg" },
         { date: "2026.03", title: "언론홍보 [비즈人워치] <a href=\"https://news.bizwatch.co.kr/article/industry/2026/02/27/0054\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--color-primary); margin-left: 6px; text-decoration: underline;\">[Link]</a>", photo: "assets/images/photos/2026_03-1.jpg" },
