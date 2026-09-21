@@ -403,7 +403,7 @@ University of Science and Technology (UST)`,
         title: "대학원생 및 박사후연구원 모집",
         intro: "한국과학기술연구원 (KIST) 에너지저장연구센터에서 함께 연구할 대학원생 및 박사후연구원을 모집합니다.",
         details: [
-            { label: "1. 모집 분야", value: "석사과정, 석/박사통합과정, 박사과정, 인턴 연구원, Postdoc 연구원" },
+            { label: "1. 모집 분야", value: "석사과정, 석/박사통합과정, 박사과정, 석사후 인턴연구원, Postdoc 연구원" },
             { label: "2. 근무지", value: "한국과학기술연구원 에너지저장연구센터 (서울시 성북구 위치)" },
             { label: "3. 지원 자격 및 분야", value: "재료, 화공, 기계, 화학, 물리 등 관련 학과, 차세대 이차전지 소재 관련 연구" }
         ],
@@ -427,8 +427,8 @@ University of Science and Technology (UST)`,
             },
             {
                 num: "3",
-                name: "연수생 과정 및 Postdoc 상시 지원",
-                desc: "대학교 입학 후 위탁 파견 연수생 및 박사후연구원(Postdoc) 직위는 상시 열려 있습니다."
+                name: "연수생 과정 및 인턴/포닥 연구원 상시 지원",
+                desc: "대학교 입학 후 위탁 파견 연수생 및 인턴/포닥 연구원 자리는 상시 열려 있습니다."
             }
         ],
         contactTitle: "지도박사 (Contact)",
