@@ -185,7 +185,7 @@ University of Science and Technology (UST)`,
     news: [
         {
             date: "2026. 06",
-            title: "New Study Published in Advanced Science",
+            title: "New Study Published in Advanced Science (I.F. = 14.1)",
             desc: "Our study about machine-learning framework for designing stable interfaces in all-solid-state lithium-ion batteries has been published in Advanced Science. (Sehyeok Park,† Myeongcho Jang,† Hun-Gi Jung, Kyung Yoon Chung, Seungho Yu*, Advanced Science, 2026, e76305) <a href=\"https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/advs.76305\" target=\"_blank\" rel=\"noopener noreferrer\">[Open Access]</a>"
         },
         {
