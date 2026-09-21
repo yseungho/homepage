@@ -216,7 +216,7 @@ University of Science and Technology (UST)`,
       {
             date: "2026. 02",
             title: "저가격 고안전성 나트륨 전고체전지 언론 인터뷰",
-           desc: "저가격 고안전성 나트륨 전고체전지에 관한 인터뷰 기사가 보도 되었습니다. <a href=\"https://news.bizwatch.co.kr/article/industry/2026/02/27/0054\" target=\"_blank\" rel=\"noopener noreferrer\">[비즈워치]</a> "
+           desc: "저가격 고안전성 나트륨 전고체전지에 관한 인터뷰 기사가 보도 되었습니다: [비즈人워치]'저가 나트륨'에 '고안전 전고체' 얹었다. <a href=\"https://news.bizwatch.co.kr/article/industry/2026/02/27/0054\" target=\"_blank\" rel=\"noopener noreferrer\">[Link]</a> "
         },
 
         {
