@@ -15,6 +15,15 @@ const PUBLICATIONS_DATA = [
         year: "2026",
         papers: [
             {
+                title: "Empirical Understanding of Li-ion Transport through Hetero-Grain Boundaries within Li-Electrolyte Interface for Stable Li Metal Anodes",
+                authors: "Jung Been Park,† Myeongcho Jang,† Min Sang Kim, Kyeongtae Park, Changhoon Choi, <strong>Seungho Yu*</strong>, and Dong-Wan Kim*",
+                journal: "Advanced Materials, 2026, accepted",
+                isCorresponding: false,
+                isCoFirst: false, 
+                isOpenAccess: true,
+                image: ""
+            },   
+            {
                 title: "Regulating Oxygen-Mediated Reconstruction During Cooling: A New Design Principle for High-Capacity Sodium Manganese Oxide Cathodes",
                 authors: "Seungmin Lee, Daseul Han, Jae-Ho Park, Eunji Kwon, Elang Barruna, Sang Hyuk Gong, Mingony Kim, Yiseul Yoo, <strong>Seungho Yu</strong>, Kyung Yoon Chung, Kyung-Wan Nam, Se Young Kim*, and Hyung-Seok Kim*",
                 journal: "Advanced Science, 2026, accepted",
@@ -22,10 +31,10 @@ const PUBLICATIONS_DATA = [
                 isCoFirst: false, 
                 isOpenAccess: true,
                 image: ""
-            },   
+            }, 
             {
                 title: "Unveiling Interfacial Charge Transfer-Mediated Hydrogen Spillover of Ultra-Low-Loaded Ruthenium Catalysts on Hydrogen Tungsten Bronze Nanofibers",
-                authors: "Kyounghoon Jung, Hee Jo Song, Hyunseok Yoon, Myeongcho Jang, Yumin Park, Kyunggyu Kim, Andi Haryanto, Woong-Ju Kim, Chan Woo Lee, <strong>Seungho Yu*</strong>, Dong-Wan Kim*",
+                authors: "Kyounghoon Jung,† Hee Jo Song,† Hyunseok Yoon,† Myeongcho Jang,† Yumin Park, Kyunggyu Kim, Andi Haryanto, Woong-Ju Kim, Chan Woo Lee, <strong>Seungho Yu*</strong>, Dong-Wan Kim*",
                 journal:  "Chinese Journal of Catalysis, 2026, accepted",
                 isCorresponding: true,
                 isCoFirst: true,
@@ -43,7 +52,7 @@ const PUBLICATIONS_DATA = [
             },
             {
                 title: "Morphology diversified Sn growth for aqueous acidic batteries",
-                authors: "Young-Hoon Lee, Geumbi Na, Eunji Kwon, Young Yong Kim, Dasol Yoon, Eunbin Park, Hosung Choi, David A. Muller, <strong>Seungho Yu</strong>, Yung-Eun Sung* Seung-Ho Yu*",
+                authors: "Young-Hoon Lee, Geumbi Na, Eunji Kwon, Young Yong Kim, Dasol Yoon, Eunbin Park, Hosung Choi, David A. Muller, <strong>Seungho Yu</strong>, Yung-Eun Sung*, Seung-Ho Yu*",
                 journal: "<a href=\"https://doi.org/10.1021/jacs.6c08047\" target=\"_blank\" rel=\"noopener noreferrer\">Journal of the American Chemical Society, 2026, accepted</a>", 
                 isCorresponding: false,
                 isCoFirst:false,
