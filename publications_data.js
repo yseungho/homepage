@@ -26,7 +26,8 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Regulating Oxygen-Mediated Reconstruction During Cooling: A New Design Principle for High-Capacity Sodium Manganese Oxide Cathodes",
                 authors: "Seungmin Lee, Daseul Han, Jae-Ho Park, Eunji Kwon, Elang Barruna, Sang Hyuk Gong, Mingony Kim, Yiseul Yoo, <strong>Seungho Yu</strong>, Kyung Yoon Chung, Kyung-Wan Nam, Se Young Kim*, and Hyung-Seok Kim*",
-                journal: "Advanced Science, 2026, accepted",
+                journal: "Advanced Science, 2026, e78064",
+                journal: "<a href=\"https://doi.org/10.1002/advs.78064\" target=\"_blank\" rel=\"noopener noreferrer\">Advanced Science, 2026, e78064</a>", 
                 isCorresponding: false,
                 isCoFirst: false, 
                 isOpenAccess: true,
@@ -62,7 +63,7 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Machine-Learning Framework for Designing Stable Interfaces in All-Solid-State Lithium-Ion Batteries",
                 authors: "Sehyeok Park,† Myeongcho Jang,† Hun-Gi Jung, Kyung Yoon Chung, <strong>Seungho Yu*</strong>",
-                journal:  "<a href=\"https://doi.org/10.1002/advs.76305\" target=\"_blank\" rel=\"noopener noreferrer\">Advanced Science, 2026, e76305</a>",
+                journal:  "<a href=\"https://doi.org/10.1002/advs.76305\" target=\"_blank\" rel=\"noopener noreferrer\">Advanced Science, 2026, 13, 53, e76305</a>",
                 isCorresponding: true,
                 isCoFirst: true,
                 isOpenAccess: true,
