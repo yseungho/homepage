@@ -17,7 +17,7 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Empirical Understanding of Li-ion Transport through Hetero-Grain Boundaries within Li-Electrolyte Interface for Stable Li Metal Anodes",
                 authors: "Jung Been Park,† Myeongcho Jang,† Min Sang Kim, Kyeongtae Park, Changhoon Choi, <strong>Seungho Yu*</strong>, and Dong-Wan Kim*",
-                journal: "Advanced Materials, 2026, accepted",
+                journal: "<a href=\"ttps://doi.org/10.1002/adma.75383\" target=\"_blank\" rel=\"noopener noreferrer\">Advanced Materials, 2026, e75383</a>",
                 isCorresponding: false,
                 isCoFirst: false, 
                 isOpenAccess: true,
@@ -26,7 +26,6 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Regulating Oxygen-Mediated Reconstruction During Cooling: A New Design Principle for High-Capacity Sodium Manganese Oxide Cathodes",
                 authors: "Seungmin Lee, Daseul Han, Jae-Ho Park, Eunji Kwon, Elang Barruna, Sang Hyuk Gong, Mingony Kim, Yiseul Yoo, <strong>Seungho Yu</strong>, Kyung Yoon Chung, Kyung-Wan Nam, Se Young Kim*, and Hyung-Seok Kim*",
-                journal: "Advanced Science, 2026, e78064",
                 journal: "<a href=\"https://doi.org/10.1002/advs.78064\" target=\"_blank\" rel=\"noopener noreferrer\">Advanced Science, 2026, e78064</a>", 
                 isCorresponding: false,
                 isCoFirst: false, 
