@@ -404,8 +404,8 @@ University of Science and Technology (UST)`,
 
     // 10. RECRUITMENT OPENING INFO (opening.html)
     opening: {
-        title: "대학원생 및 박사후연구원 모집",
-        intro: "한국과학기술연구원 (KIST) 에너지저장연구센터에서 함께 연구할 대학원생 및 박사후연구원을 모집합니다.",
+        title: "대학원생 및 연구원 모집",
+        intro: "한국과학기술연구원 (KIST) 에너지저장연구센터에서 함께 연구할 대학원생 및 연구원을 모집합니다.",
         details: [
             { label: "1. 모집 분야", value: "석사과정, 석/박사통합과정, 박사과정, 인턴연구원, 석사후연구원, 박사후연구원" },
             { label: "2. 근무지", value: "한국과학기술연구원 에너지저장연구센터 (서울시 성북구 위치)" },
