@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             yearSection.innerHTML = `
-                <h3>${group.year} (${group.papers.length})</h3>
+                <h3><span>${group.year} (<span class="pub-year-count">${group.papers.length}</span>)</span></h3>
                 <div class="pub-list">${listMarkup}</div>
             `;
             publicationsContainer.appendChild(yearSection);
@@ -271,9 +271,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 totalPapers += group.papers.length;
             });
 
-            let buttonsHtml = `<button class="year-btn active" data-year="all">All (${totalPapers})</button>`;
+            let buttonsHtml = `<button class="year-btn active" data-year="all">All (<span class="year-btn-count">${totalPapers}</span>)</button>`;
             LAB_DATA.publications.forEach(group => {
-                buttonsHtml += `<button class="year-btn" data-year="${group.year}">${group.year} (${group.papers.length})</button>`;
+                buttonsHtml += `<button class="year-btn" data-year="${group.year}">${group.year} (<span class="year-btn-count">${group.papers.length}</span>)</button>`;
             });
             filterButtonsContainer.innerHTML = buttonsHtml;
         }
@@ -288,26 +288,72 @@ document.addEventListener('DOMContentLoaded', () => {
         let activeFilterYear = 'all';
         let searchQuery = '';
 
+        // Remember each field's original markup so highlights can be cleared
+        const highlightFields = document.querySelectorAll('.pub-title, .pub-authors, .pub-journal');
+        highlightFields.forEach(el => {
+            el.dataset.originalHtml = el.innerHTML;
+        });
+
+        // Wrap occurrences of the query in <mark>, touching only text (keeps <strong> etc.)
+        const highlightMatches = (el, query) => {
+            el.innerHTML = el.dataset.originalHtml;
+            if (!query) return;
+
+            const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+            const textNodes = [];
+            while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+            textNodes.forEach(node => {
+                const text = node.nodeValue;
+                const lower = text.toLowerCase();
+                let index = lower.indexOf(query);
+                if (index === -1) return;
+
+                const fragment = document.createDocumentFragment();
+                let lastIndex = 0;
+                while (index !== -1) {
+                    fragment.appendChild(document.createTextNode(text.slice(lastIndex, index)));
+                    const mark = document.createElement('mark');
+                    mark.className = 'pub-highlight';
+                    mark.textContent = text.slice(index, index + query.length);
+                    fragment.appendChild(mark);
+                    lastIndex = index + query.length;
+                    index = lower.indexOf(query, lastIndex);
+                }
+                fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+                node.parentNode.replaceChild(fragment, node);
+            });
+        };
+
         const updatePublicationsVisibility = () => {
             let totalVisible = 0;
+            let totalSearchMatches = 0;
+            const searchMatchesByYear = {};
 
             yearGroups.forEach(group => {
                 const groupYear = group.getAttribute('data-year');
                 const itemsInGroup = group.querySelectorAll('.pub-item');
                 let visibleInGroup = 0;
+                let searchMatchesInGroup = 0;
 
                 itemsInGroup.forEach(item => {
                     const titleText = item.querySelector('.pub-title').textContent.toLowerCase();
                     const authorsText = item.querySelector('.pub-authors').textContent.toLowerCase();
                     const journalText = item.querySelector('.pub-journal').textContent.toLowerCase();
-                    
-                    const matchesSearch = titleText.includes(searchQuery) || 
-                                          authorsText.includes(searchQuery) || 
+
+                    const matchesSearch = titleText.includes(searchQuery) ||
+                                          authorsText.includes(searchQuery) ||
                                           journalText.includes(searchQuery);
-                    
+
                     const matchesYear = activeFilterYear === 'all' || activeFilterYear === groupYear;
 
+                    if (matchesSearch) {
+                        searchMatchesInGroup++;
+                    }
+
                     if (matchesSearch && matchesYear) {
+                        item.querySelectorAll('.pub-title, .pub-authors, .pub-journal')
+                            .forEach(el => highlightMatches(el, searchQuery));
                         item.classList.remove('hidden');
                         visibleInGroup++;
                         totalVisible++;
@@ -316,11 +362,30 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
+                searchMatchesByYear[groupYear] = searchMatchesInGroup;
+                totalSearchMatches += searchMatchesInGroup;
+
+                // Update the year heading count, e.g. "2026 (1)"
+                const headingCount = group.querySelector('.pub-year-count');
+                if (headingCount) {
+                    headingCount.textContent = visibleInGroup;
+                }
+
                 if (visibleInGroup > 0) {
                     group.classList.remove('hidden');
                 } else {
                     group.classList.add('hidden');
                 }
+            });
+
+            // Update the year filter button counts to reflect the current search
+            yearButtons.forEach(btn => {
+                const btnYear = btn.getAttribute('data-year');
+                const countEl = btn.querySelector('.year-btn-count');
+                if (!countEl) return;
+                countEl.textContent = btnYear === 'all'
+                    ? totalSearchMatches
+                    : (searchMatchesByYear[btnYear] || 0);
             });
 
             if (noResultsMsg) {
