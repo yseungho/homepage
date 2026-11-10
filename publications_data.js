@@ -26,7 +26,7 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Regulating Oxygen-Mediated Reconstruction During Cooling: A New Design Principle for High-Capacity Sodium Manganese Oxide Cathodes",
                 authors: "Seungmin Lee, Daseul Han, Jae-Ho Park, Eunji Kwon, Elang Barruna, Sang Hyuk Gong, Mingony Kim, Yiseul Yoo, <strong>Seungho Yu</strong>, Kyung Yoon Chung, Kyung-Wan Nam, Se Young Kim*, and Hyung-Seok Kim*",
-                journal: "<a href=\"https://doi.org/10.1002/advs.78064\" target=\"_blank\" rel=\"noopener noreferrer\">Advanced Science, 2026, e78064</a>", 
+                journal: "<a href=\"https://doi.org/10.1002/advs.78064\" target=\"_blank\" rel=\"noopener noreferrer\">Advanced Science, 2026, 13, 58, e78064</a>", 
                 isCorresponding: false,
                 isCoFirst: false, 
                 isOpenAccess: true,
@@ -53,7 +53,7 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Morphology diversified Sn growth for aqueous acidic batteries",
                 authors: "Young-Hoon Lee, Geumbi Na, Eunji Kwon, Young Yong Kim, Dasol Yoon, Eunbin Park, Hosung Choi, David A. Muller, <strong>Seungho Yu</strong>, Yung-Eun Sung*, Seung-Ho Yu*",
-                journal: "<a href=\"https://doi.org/10.1021/jacs.6c08047\" target=\"_blank\" rel=\"noopener noreferrer\">Journal of the American Chemical Society, 2026, accepted</a>", 
+                journal: "<a href=\"https://doi.org/10.1021/jacs.6c08047\" target=\"_blank\" rel=\"noopener noreferrer\">Journal of the American Chemical Society, 2026, 148, 41, 44079–44090</a>", 
                 isCorresponding: false,
                 isCoFirst:false,
                 isOpenAccess: false,
@@ -175,7 +175,7 @@ const PUBLICATIONS_DATA = [
             {
                 title: "Boosting the Power Characteristics of All-Solid-State Batteries through Improved Electrochemical Stability: Site-Specific Nb Doping in Argyrodite",
                 authors: "Yongsun Park, So Yi Lee, Hae-Yong Kim, Myeongcho Jang, Sunho Ko, Gwangsuk Oh, Seung-Deok Seo, Min Jae You, Hanjun Kim, Minwook Pin, Robson S. Monteiro, <strong>Seungho Yu</strong>, Kyung-Wan Nam*, Sang Cheol Nam,* Ohmin Kwon*",
-                journal: "<a href=\"https://doi.org/10.1002/cey2.70058\" target=\"_blank\" rel=\"noopener noreferrer\">Carbon Energy, 2025, 7, e70058</a>",
+                journal: "<a href=\"https://doi.org/10.1002/cey2.70058\" target=\"_blank\" rel=\"noopener noreferrer\">Carbon Energy, 2025, 7, 11, e70058</a>",
                 isCorresponding: false,
                 image: ""
             },
