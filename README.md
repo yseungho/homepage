@@ -14,7 +14,7 @@
 `data.js` 파일을 텍스트 에디터(메모장, VS Code 등)로 열면 직관적인 JavaScript 객체 데이터가 나타납니다. 각 속성의 따옴표 안에 있는 텍스트만 고치고 파일을 저장하면 홈페이지에 즉각 반영됩니다.
 
 *   **홈페이지 소개글 수정**: `home` 객체 아래의 `title`, `description`, `overview` 값 수정.
-*   **연구실 멤버 추가/수정**: `members` 리스트에 새로운 연구원 정보 `{ name: "이름", role: "postdoc 또는 student", ... }`를 형식에 맞춰 복사하여 추가.
+*   **연구실 멤버 추가/수정**: `members` 리스트에 새로운 연구원 정보 `{ name: "이름", role: "postdoc", "intern" 또는 "student", ... }`를 형식에 맞춰 복사하여 추가.
 *   **졸업생/인턴 수정**: `alumni` 및 `interns` 리스트 내의 객체들 수정 및 추가.
 *   **연구 분야 내용 수정**: `research` 리스트의 문장들 수정.
 *   **논문 실적(Publications) 추가**: `publications` 리스트의 연도(`2026` 등) 내에 새 논문 구조 `{ title: "제목", authors: "저자", journal: "저널명", isCorresponding: true/false, ... }`를 추가.

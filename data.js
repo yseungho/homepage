@@ -50,6 +50,7 @@ University of Science and Technology (UST)`,
     },
 
     // 3. LAB MEMBERS LIST (people.html)
+    // role: "postdoc" (Postdoc Researcher), "intern" (Intern Researcher) -> Researchers 섹션 / "student" -> Graduate Students 섹션
     // 각 멤버별 photo 속성에 사진 경로를 지정할 수 있습니다. (예: photo: "assets/images/members/name.jpg")
     members: [
         {
@@ -58,7 +59,8 @@ University of Science and Technology (UST)`,
             photo: "assets/images/members/yongheum_lee.jpg",
             program: "Ph.D. University of Science and Technology (UST), KIST School",
             interest: "All-solid-state batteries, Solid electrolytes",
-            email: "h18511@kist.re.kr"
+            email: "h18511@kist.re.kr",
+            googleScholar: "https://scholar.google.com/citations?hl=ko&user=RpzwmrYAAAAJ"
         },
         {
             name: "Dr. Sehyeok Park",
@@ -66,7 +68,8 @@ University of Science and Technology (UST)`,
             photo: "assets/images/members/Sehyeok Park.png", // 사진이 없으면 기본 아이콘이 표시됩니다.
             program: "Ph.D. Seoul National University",
             interest: "First-principles calculations, Machine learning, Solid electrolytes",
-            email: "sehyeok.park123@kist.re.kr"
+            email: "sehyeok.park123@kist.re.kr",
+            googleScholar: "https://scholar.google.com/citations?hl=ko&user=fARuSzwAAAAJ"
         },
         {
             name: "Chelin Jeon",
@@ -82,7 +85,8 @@ University of Science and Technology (UST)`,
             photo: "assets/images/members/Myeongcho Jang.png",
             program: "Integrated M.S. and Ph.D. course<br>Korea University - KIST joint program",
             interest: "First-principles calculations, Machine learning, Solid electrolytes",
-            email: "jangmjo48@kist.re.kr"
+            email: "jangmjo48@kist.re.kr",
+            googleScholar: "https://scholar.google.com/citations?hl=ko&user=8ZuJFSgAAAAJ"
         },
         {
             name: "Eunji Kwon",
@@ -94,9 +98,9 @@ University of Science and Technology (UST)`,
         },
         {
             name: "Susie Lee",
-            role: "student",
+            role: "intern",
             photo: "assets/images/members/Susie Lee.png",
-            program: "M.S. course<br>Yonsei University - KIST joint program",
+            program: "M.S. Yonsei University",
             interest: "All-solid-state batteries, Solid electrolytes",
             email: "susielee@kist.re.kr"
         }

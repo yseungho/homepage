@@ -132,6 +132,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const studentsGrid = document.getElementById('students-list');
         
         if (postdocsGrid) postdocsGrid.innerHTML = '';
+
+        const roleLabels = {
+            postdoc: 'Postdoc Researcher',
+            intern: 'Intern Researcher',
+            student: 'Graduate Student'
+        };
         if (studentsGrid) studentsGrid.innerHTML = '';
 
         LAB_DATA.members.forEach(member => {
@@ -147,16 +153,26 @@ document.addEventListener('DOMContentLoaded', () => {
                    <i data-lucide="user" style="display:none; width:56px; height:56px; color:var(--text-muted);"></i>`
                 : `<i data-lucide="user" style="width:56px; height:56px; color:var(--text-muted);"></i>`;
 
+            // Optional Google Scholar button (same style as the PI's)
+            // Shown right next to the member's name
+            const scholarMarkup = member.googleScholar
+                ? `<a href="${member.googleScholar}" target="_blank" rel="noopener noreferrer" class="pi-social-btn member-scholar-btn" aria-label="${member.name} Google Scholar" title="Google Scholar">
+                       <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+                       </svg>
+                   </a>`
+                : '';
+
             card.innerHTML = `
                 <div class="member-avatar" style="overflow:hidden; display:flex; align-items:center; justify-content:center;">${avatarMarkup}</div>
-                <h4 class="member-name">${member.name}</h4>
-                <div class="member-role">${member.role === 'postdoc' ? 'Postdoc Researcher' : 'Graduate Student'}</div>
+                <h4 class="member-name">${member.name}${scholarMarkup}</h4>
+                <div class="member-role">${roleLabels[member.role] || 'Graduate Student'}</div>
                 <p class="member-program">${member.program}</p>
                 <p class="member-interest">${member.interest}</p>
                 ${emailMarkup}
             `;
 
-            if (member.role === 'postdoc' && postdocsGrid) {
+            if ((member.role === 'postdoc' || member.role === 'intern') && postdocsGrid) {
                 postdocsGrid.appendChild(card);
             } else if (member.role === 'student' && studentsGrid) {
                 studentsGrid.appendChild(card);
